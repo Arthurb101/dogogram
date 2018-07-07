@@ -4,7 +4,7 @@
     <h2>{{state1}}</h2>
     <h2>{{state2}}</h2>
     <div class="container">
-
+        <Posts/>
     </div><!-- /container -->
 
 </div>
@@ -13,10 +13,11 @@
 
 
 <script>
+import Posts from '@/components/Posts.vue'
 
  export default {
    name: 'TheFeedPage',
-   components: {  },
+   components: { Posts },
    data(){
        return {
            state2: "haha"
