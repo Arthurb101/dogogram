@@ -1,6 +1,6 @@
 <template>
     <div class ="login">
-        <div class="card card-container">
+        <div class="card-box card-container">
             <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
             <a class = "fancy-font"> DogoGram! </a>
             <form class="form-signin">

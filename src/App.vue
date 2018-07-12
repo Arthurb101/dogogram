@@ -11,6 +11,7 @@
 </script>
 
 <style>
+
 body{
   background: url("https://images.pexels.com/photos/490411/pexels-photo-490411.jpeg?cs=srgb&dl=road-landscape-nature-490411.jpg&fm=jpg");
   -webkit-background-size: cover;
@@ -23,7 +24,7 @@ body{
     font-family: 'Kaushan Script', cursive;
 }
 
-.card-container.card {
+.card-container.card-box {
    max-width: 350px;
    padding: 40px 40px;
 }
@@ -40,7 +41,7 @@ body{
 /*
 * Card component
 */
-.card {
+.card-box {
    background-color: #F7F7F7;
    /* just in case there no content*/
    padding: 20px 25px 30px;

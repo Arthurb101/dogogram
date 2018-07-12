@@ -5,6 +5,11 @@
     <h2>{{state2}}</h2>
     <div class="container">
         <Posts/>
+        <Posts/>
+
+
+
+
     </div><!-- /container -->
 
 </div>
@@ -42,21 +47,8 @@ computed: {
      background-image: url("https://www.pexels.com/search/nature%20wallpaper/");
 
  }
- .posts div {
-     margin-bottom: 40px;
- }
- h1 {
-     color: #8BB8C7;
-     font-size: 2.5em;
- }
- h2 {
-     margin: 0px;
- }
- h3 {
-     margin: 0px;
-     font-weight: normal;
-     font-style: italic;
- }
+
+
  .header-title{
     color:black;
     font-size: 42px;
