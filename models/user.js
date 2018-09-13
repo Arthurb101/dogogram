@@ -9,11 +9,14 @@ module.exports =  {
 
   signUp: function (user)
   {
+    bcrypt.hash(user.password, saltRounds).then(function(hash) {
+    user.password = hash
     knex.insert(
         user
       )
         .into("users")
         .then(() => console.log('user Signed Up!'));
+      });
   },
 
   login: function (userInfo)

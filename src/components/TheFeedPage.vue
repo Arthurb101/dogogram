@@ -11,7 +11,11 @@
 
 
     </div><!-- /container -->
-
+    <PostCreater v-bind:show="postCreaterShow" v-on:closeModal="postCreaterShow = false"/>
+    <b-navbar style="text-align: center;" toggleable="md" type="dark" variant="info" fixed = "bottom">
+        
+        <div @click="postCreaterShow = true "><PlusCircleIcon class="icon-plus-circle" /></div>
+    </b-navbar>
 </div>
 
 </template>
@@ -19,13 +23,21 @@
 
 <script>
 import Posts from '@/components/Posts.vue'
+import PostCreater from '@/components/PostCreater.vue'
+import PlusCircleIcon from "vue-material-design-icons/plus-circle.vue"
+import { PortalTarget } from 'portal-vue'
 
  export default {
    name: 'TheFeedPage',
-   components: { Posts },
+   components: { Posts,
+       PlusCircleIcon,
+       PostCreater
+   },
    data(){
        return {
-           state2: "haha"
+           state2: "haha",
+           postCreaterShow: false
+
     }
 },
 computed: {
@@ -55,6 +67,12 @@ computed: {
     position: absolute;
     top: 50px;
     left: 50px;
+ }
+
+ .icon-plus-circle{
+     font-size:50px;
+     left: 50%;
+
  }
 
 

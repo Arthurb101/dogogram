@@ -3,7 +3,6 @@ var express = require('express')
 var router = express.Router()
 const Users = require('../models/user');
 
-  console.log("yes this file has been reached!");
 
   router.post('/signup',(req, res) => {
     console.log("route for singUp works!");
@@ -29,5 +28,7 @@ router.post('/login',async (req, res, next) => {
   console.log("route for login works!");
   //res.send('the post works');
 });
+
+
 
 module.exports = router
